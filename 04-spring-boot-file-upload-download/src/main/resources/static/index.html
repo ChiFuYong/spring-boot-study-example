@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>文件上传</title>
+</head>
+<body>
+
+	<!-- enctype属性
+			application/x-www-form-urlencoded：普通表单数据.(少量文字信息)
+			text/plain： 大文字量时使用的类型.邮件,论文
+			multipart/form-data：表单中包含二进制文件内容.
+	-->
+	<form action="fileUploadController" method="post" enctype="multipart/form-data">
+		请选择上传文件：<input type="file" name="file"/><br/>
+		<input type="submit"/>
+	</form>
+
+	<a href="/download">点击下载</a>
+
+
+</body>
+</html>
