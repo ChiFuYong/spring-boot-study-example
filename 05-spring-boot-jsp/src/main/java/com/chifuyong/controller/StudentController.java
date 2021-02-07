@@ -1,4 +1,4 @@
-package com.chifuyong.Controller;
+package com.chifuyong.controller;
 
 
 import com.chifuyong.entity.Student;

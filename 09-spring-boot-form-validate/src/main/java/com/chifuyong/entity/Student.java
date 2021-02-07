@@ -1,17 +1,16 @@
 package com.chifuyong.entity;
 
-import javax.validation.Valid;
-import javax.validation.constraints.*;
+import javax.validation.constraints.NotNull;
 
 public class Student {
     private String id ;
 
-    @NotBlank(message = "姓名不能为空")
+    @NotNull(message = "姓名不能为空")
     private String name;
 
     private Integer age;
 
-    @NotBlank(message = "性别不能为空")
+    @NotNull(message = "性别不能为空")
     private String sex;
 
     public Student() {
